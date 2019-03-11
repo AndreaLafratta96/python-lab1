@@ -1,19 +1,17 @@
 #Create an empty list
 Task_List = []
+choice=0
 
 beginning = """Insert the number corresponding to the action you want to perform:
-1. insert a new task;
-2. remove a task;
-3. show all the tasks;
-4. close the program.
-Your choice: """
-
-print(beginning)
-
-choice=0
+    1. insert a new task;
+    2. remove a task;
+    3. show all the tasks;
+    4. close the program.
+    Your choice: """
 
 #Select an option
 while choice != 4:
+    print(beginning)
     choice=int(input())
     if choice == 1:
         print("Insert a new task: ")
@@ -28,7 +26,8 @@ while choice != 4:
         print("Printing the whole list: ")
         print(Task_List)
     else:
-        print("Starting again...")
+        print("Program ending")
+
 
 
 
